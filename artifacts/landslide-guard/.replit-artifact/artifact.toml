@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "LandslideGuard"
+description = "A polished SIH26001 demo dashboard for AI-powered landslide early warning, risk monitoring, impact assessment, alerts, and community reporting across North Eastern India."
+version = "1.0.0"
+id = "artifacts/landslide-guard"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19193
+
+[services.development]
+run = "pnpm --filter @workspace/landslide-guard run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/landslide-guard", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/landslide-guard/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19193"
+BASE_PATH = "/"

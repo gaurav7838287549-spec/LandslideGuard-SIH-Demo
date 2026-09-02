@@ -1,0 +1,970 @@
+Build a polished, modern, fully interactive web prototype called **“LandslideGuard”** for **Smart India Hackathon 2026 Problem Statement SIH26001 — AI-Based Early Warning and Landslide Risk Monitoring System in North Eastern Region (NER)**.
+
+IMPORTANT:
+This is an **SIH demo prototype**, not a production emergency system. Use simulated/demo data where real-time APIs or datasets are unavailable. The application must clearly indicate that demo data is simulated.
+
+## 1. TECH STACK
+
+Build a responsive web application using:
+
+* React
+* TypeScript
+* Tailwind CSS
+* Modern component architecture
+* Interactive charts
+* Interactive GIS-style map
+* Lucide icons
+* Clean animations and transitions
+* Responsive desktop/tablet/mobile design
+
+Use a professional **government + disaster-management + AI dashboard** visual style.
+
+Do NOT make it look like a generic admin dashboard.
+
+---
+
+# 2. PROJECT BRANDING
+
+Project name:
+
+**LandslideGuard**
+
+Tagline:
+
+**“Predict. Protect. Respond.”**
+
+Subtitle:
+
+**AI-Powered Landslide Early Warning & Risk Monitoring System**
+
+Show:
+**Smart India Hackathon 2026 • SIH26001 • Disaster Management**
+
+Use a professional logo concept combining:
+
+* mountain
+* location pin
+* warning signal
+* AI/network elements
+
+---
+
+# 3. MAIN USER TYPES
+
+Create role-based demo navigation for:
+
+### A. Disaster Management Authority
+
+Can:
+
+* monitor risk zones
+* view predictions
+* view affected roads/villages
+* prioritize emergency response
+* issue alerts
+
+### B. Field Officer
+
+Can:
+
+* view assigned locations
+* submit field reports
+* upload incident information
+* update incident status
+
+### C. Citizen
+
+Can:
+
+* view local warning
+* report landslide/slope movement
+* submit location
+* upload photo
+* receive warning
+
+For the demo, allow the user to switch between roles from the profile/menu.
+
+---
+
+# 4. LOGIN SCREEN
+
+Create a beautiful landing/login screen.
+
+Left side:
+
+* LandslideGuard logo
+* tagline
+* short explanation:
+  “AI-driven monitoring for safer roads and communities across the North Eastern Region.”
+
+Right side:
+Login card.
+
+Fields:
+
+* Name
+* Role
+
+Buttons:
+
+* Continue as Authority
+* Continue as Field Officer
+* Continue as Citizen
+
+Also include:
+**“Explore Demo”**
+
+Clicking it should directly open the dashboard.
+
+---
+
+# 5. MAIN DASHBOARD
+
+Create a professional dashboard with sidebar navigation.
+
+Sidebar:
+
+🏠 Dashboard
+🗺️ Risk Map
+🤖 AI Prediction
+🌧️ Weather & Sensors
+🚧 Infrastructure Impact
+🚨 Alerts
+📍 Field Reports
+👥 Communities
+📊 Analytics
+⚙️ Settings
+
+Top bar:
+
+* Search
+* Current region
+* Notification icon
+* User profile
+* Demo Mode indicator
+
+---
+
+# 6. DASHBOARD OVERVIEW
+
+Header:
+
+**Regional Risk Overview**
+
+Subtext:
+“AI-powered monitoring of landslide-prone areas across the North Eastern Region.”
+
+Create KPI cards:
+
+### Active Risk Zones
+
+07
+
+### High/Critical Zones
+
+03
+
+### Roads at Risk
+
+12
+
+### Communities at Risk
+
+08
+
+### Active Alerts
+
+04
+
+Each card should be clickable and open the corresponding detailed page.
+
+---
+
+# 7. LIVE RISK MAP
+
+This must be one of the most important parts of the prototype.
+
+Create an interactive GIS-style map focused on **North Eastern India**.
+
+Show:
+
+* Assam
+* Arunachal Pradesh
+* Meghalaya
+* Manipur
+* Mizoram
+* Nagaland
+* Tripura
+* Sikkim
+
+Use a map library such as Leaflet if available.
+
+If an external map/API is unavailable, create a visually convincing simulated GIS map.
+
+Map controls:
+
+* Zoom
+* Locate
+* Fullscreen
+* Layer selector
+
+Layers:
+
+☑ Landslide Risk
+☑ Rainfall
+☑ Slope
+☑ Roads
+☑ Villages
+☑ Rivers
+☑ Field Reports
+☑ Satellite/terrain layer
+
+Risk colors:
+
+🟢 LOW
+🟡 MODERATE
+🟠 HIGH
+🔴 CRITICAL
+
+Create multiple realistic demo hotspots.
+
+When the user clicks a hotspot, open a popup:
+
+**Risk Zone: Zone A**
+
+Risk Score: 87%
+
+Risk Level: HIGH
+
+24h Rainfall: 142 mm
+
+7-day Rainfall: 328 mm
+
+Soil Moisture: 78%
+
+Slope: 42°
+
+Elevation: 1,240 m
+
+Nearest Road: 1.2 km
+
+Nearby Population: 2,840
+
+Affected Villages: 3
+
+Recommended Action:
+“Deploy field team and monitor road connectivity.”
+
+Button:
+**View Detailed Prediction**
+
+---
+
+# 8. AI PREDICTION PAGE
+
+Create a dedicated AI prediction interface.
+
+Title:
+
+**AI Landslide Risk Prediction**
+
+Explain simply:
+
+“The model estimates landslide probability using rainfall, soil moisture, terrain, slope, elevation, historical events and infrastructure proximity.”
+
+Input cards:
+
+24h Rainfall
+[118 mm]
+
+7-day Rainfall
+[286 mm]
+
+Soil Moisture
+[72%]
+
+Slope
+[41°]
+
+Elevation
+[1,180 m]
+
+Distance to Road
+[1.4 km]
+
+Historical Landslide Frequency
+[High]
+
+Create button:
+
+**Run AI Prediction**
+
+After clicking:
+
+Show animated processing:
+
+Collecting data →
+Feature analysis →
+Risk calculation →
+Impact assessment
+
+Then display:
+
+### AI Risk Score
+
+78%
+
+### Risk Level
+
+HIGH
+
+### Confidence
+
+91%
+
+Use a circular gauge.
+
+Also show:
+
+Risk Factors:
+
+* Heavy rainfall — HIGH
+* Soil saturation — HIGH
+* Steep slope — HIGH
+* Historical activity — MODERATE
+* Road proximity — HIGH
+
+Create an **Explainable AI** section:
+
+“Why is this zone risky?”
+
+Use simple horizontal bars showing feature contribution.
+
+---
+
+# 9. MOST IMPORTANT DEMO FEATURE — RISK SIMULATOR
+
+Create an interactive **What-If Risk Simulator**.
+
+Title:
+
+**Landslide Risk Simulator**
+
+Controls:
+
+Rainfall:
+slider from 0–250 mm
+
+Soil Moisture:
+slider from 0–100%
+
+Slope:
+slider from 0–60°
+
+Historical Risk:
+Low / Medium / High
+
+When sliders change, dynamically update:
+
+AI Risk Score
+
+Risk Level
+
+Map hotspot intensity
+
+Affected roads
+
+Affected communities
+
+Alert severity
+
+Example:
+
+Normal:
+Risk = 31%
+
+Heavy Rain:
+Risk = 67%
+
+Extreme Rainfall:
+Risk = 91%
+
+When risk crosses a critical threshold:
+
+Show:
+
+🚨 CRITICAL EARLY WARNING
+
+“Immediate response recommended for Zone A.”
+
+This simulator should be the **main live demo feature for SIH judges**.
+
+---
+
+# 10. WEATHER & SENSOR PAGE
+
+Create:
+
+**Weather & Environmental Monitoring**
+
+Cards:
+
+Rainfall
+118 mm / 24h
+
+Temperature
+24°C
+
+Humidity
+87%
+
+Soil Moisture
+72%
+
+Wind Speed
+18 km/h
+
+Create charts:
+
+* Rainfall trend
+* Soil moisture trend
+* Temperature trend
+
+Also create simulated sensor status:
+
+Soil Sensor 01 — Online
+Soil Sensor 02 — Online
+Soil Sensor 03 — Warning
+Soil Sensor 04 — Offline
+
+Show timestamp:
+“Last updated: 2 minutes ago”
+
+---
+
+# 11. INFRASTRUCTURE IMPACT PAGE
+
+This differentiates our solution from a basic landslide prediction system.
+
+Title:
+
+**Infrastructure & Community Impact**
+
+Show:
+
+### Roads
+
+12 at risk
+
+### Bridges
+
+3 at risk
+
+### Villages
+
+8 potentially affected
+
+### Critical Facilities
+
+2 potentially affected
+
+Create a table:
+
+Location | Risk | Road Impact | Population | Priority
+
+Example:
+
+Zone A | Critical | Blockage likely | 2,840 | P1
+
+Zone B | High | Partial disruption | 1,250 | P2
+
+Zone C | Moderate | Low | 620 | P3
+
+Clicking a row opens detailed information.
+
+---
+
+# 12. EMERGENCY RESPONSE PRIORITY
+
+Create an intelligent priority system.
+
+Title:
+
+**Emergency Response Prioritisation**
+
+Explain:
+
+“The system ranks locations based on hazard probability, population exposure, road connectivity and critical infrastructure.”
+
+Create priority cards:
+
+### P1 — Zone A
+
+CRITICAL
+
+Risk: 94%
+
+Population: 2,840
+
+Road: Major Route
+
+Action:
+“Deploy response team immediately.”
+
+### P2 — Zone B
+
+HIGH
+
+### P3 — Zone C
+
+MODERATE
+
+Add:
+**Generate Response Plan**
+
+Clicking it generates a demo response checklist.
+
+---
+
+# 13. ALERT CENTER
+
+Create:
+
+**Early Warning & Alerts**
+
+Alert cards:
+
+🚨 Critical
+Zone A
+“Extreme rainfall + high slope risk detected.”
+
+⚠️ High
+Zone B
+“Road connectivity may be affected.”
+
+ℹ️ Moderate
+Zone C
+“Continue monitoring.”
+
+Buttons:
+
+* Send Alert
+* Acknowledge
+* View Location
+
+Create alert channels:
+
+📱 Mobile Notification
+📨 SMS
+🔊 Local Warning
+📢 Authority Dashboard
+
+For demo, clicking **Send Alert** should show:
+
+“Alert successfully generated.”
+
+---
+
+# 14. CITIZEN FIELD REPORTING
+
+Create a beautiful mobile-friendly page:
+
+**Report an Incident**
+
+Fields:
+
+Location
+[Use Current Location]
+
+Incident Type:
+
+* Landslide
+* Road Blockage
+* Slope Crack
+* Heavy Rainfall
+* Other
+
+Severity:
+Low / Medium / High
+
+Description
+
+Upload Photo
+
+Button:
+**Submit Report**
+
+After submission show:
+
+✅ Report successfully submitted
+
+“Your report has been added to the regional monitoring system.”
+
+Add the submitted report to the map as a marker.
+
+---
+
+# 15. FIELD REPORT DASHBOARD
+
+Show reports in a table:
+
+Report ID
+Location
+Type
+Severity
+Time
+Status
+
+Statuses:
+
+New
+Under Review
+Verified
+Resolved
+
+Allow status changes.
+
+---
+
+# 16. COMMUNITY WARNING PAGE
+
+Create:
+
+**Community Safety**
+
+Select location:
+
+District / State
+
+Show:
+
+Current Risk
+Warning Level
+Expected Rainfall
+Safety Recommendation
+
+Example:
+
+🔴 HIGH RISK
+
+“Residents near identified slopes should remain alert and follow local authority instructions.”
+
+Also include:
+**Share Warning**
+
+---
+
+# 17. ANALYTICS PAGE
+
+Create charts for:
+
+* Landslide events over time
+* Rainfall vs landslide probability
+* Risk zones by district
+* Road exposure
+* Community exposure
+* Alert history
+
+Use clean professional charts.
+
+---
+
+# 18. SATELLITE / TERRAIN MONITORING
+
+Create a page called:
+
+**Terrain Monitoring**
+
+Show a simulated satellite/terrain view.
+
+Allow toggling:
+
+Satellite View
+Slope Map
+Elevation
+Historical Landslides
+
+Show detected terrain changes as highlighted areas.
+
+Add:
+
+“Change detected in Zone A”
+
+Change severity:
+HIGH
+
+---
+
+# 19. NOTIFICATION PANEL
+
+Create realistic notifications:
+
+🚨 Zone A risk increased from 72% → 87%
+
+🌧️ Heavy rainfall detected
+
+📍 New citizen report received
+
+🚧 Road connectivity warning
+
+Click notification → open relevant page/location.
+
+---
+
+# 20. OFFLINE / LOW-NETWORK MODE
+
+Because the system is intended for remote NER areas, add a visible:
+
+**Network Status**
+
+🟢 Online
+
+Create a toggle:
+
+**Simulate Low Network**
+
+When activated:
+
+🟠 Limited Connectivity
+
+Show:
+
+“Offline field reports will sync automatically when connectivity returns.”
+
+This should be a visible differentiator.
+
+---
+
+# 21. MULTILINGUAL DEMO
+
+Add language selector:
+
+English
+Hindi
+
+The main navigation and important alerts should switch language.
+
+Example Hindi alert:
+
+“Zone A में भूस्खलन का उच्च जोखिम पाया गया है। स्थानीय अधिकारियों के निर्देशों का पालन करें।”
+
+Keep translations simple and professional.
+
+---
+
+# 22. SETTINGS
+
+Include:
+
+Notification settings
+Language
+Map layers
+Risk threshold
+Data refresh interval
+Demo mode
+Dark/light theme
+
+---
+
+# 23. UI/UX REQUIREMENTS
+
+The UI must look like a **real professional disaster-management platform**.
+
+Style:
+
+* modern
+* clean
+* minimal
+* trustworthy
+* premium
+* responsive
+
+Use:
+
+* dark navy dashboard
+* white/gray cards
+* green/yellow/orange/red risk indicators
+* rounded cards
+* subtle shadows
+* smooth hover animations
+* animated charts
+* clean typography
+
+Do NOT overcrowd the screen.
+
+Every important button should work.
+
+Use toast notifications for actions.
+
+Use loading animations for AI prediction.
+
+Use confirmation dialogs for sending alerts.
+
+---
+
+# 24. DEMO DATA
+
+Use realistic but clearly simulated data.
+
+Example hotspot:
+
+Location:
+Arunachal Pradesh
+
+Rainfall:
+142 mm / 24h
+
+Soil moisture:
+78%
+
+Slope:
+42°
+
+Elevation:
+1,240 m
+
+Risk:
+87%
+
+Nearby population:
+2,840
+
+Road distance:
+1.2 km
+
+Historical events:
+High
+
+Do NOT claim that these are real live measurements.
+
+Add small label:
+**“DEMO DATA”**
+
+---
+
+# 25. JUDGE DEMO FLOW
+
+The entire application must support this 3-minute demo:
+
+STEP 1
+Open Dashboard.
+
+STEP 2
+Show NER risk map.
+
+STEP 3
+Click a high-risk zone.
+
+STEP 4
+Show rainfall, soil moisture, slope and other factors.
+
+STEP 5
+Open AI Prediction.
+
+STEP 6
+Click “Run AI Prediction”.
+
+STEP 7
+Show:
+87% HIGH RISK.
+
+STEP 8
+Open Risk Simulator.
+
+Increase rainfall from normal → extreme.
+
+Show:
+31% → 67% → 94%.
+
+STEP 9
+Map automatically changes hotspot severity.
+
+STEP 10
+Infrastructure Impact updates.
+
+STEP 11
+Emergency priority changes to P1.
+
+STEP 12
+Click “Generate Alert”.
+
+STEP 13
+Show warning notification.
+
+STEP 14
+Open Citizen Reporting.
+
+Submit a field report.
+
+STEP 15
+Return to map and show the new report marker.
+
+Final screen:
+
+**PREDICT → ASSESS → PRIORITISE → ALERT → RESPOND**
+
+---
+
+# 26. IMPORTANT DIFFERENTIATOR
+
+Do NOT position LandslideGuard as only a landslide prediction model.
+
+Our core workflow is:
+
+**Multi-source Data**
+↓
+**AI Risk Prediction**
+↓
+**GIS Visualisation**
+↓
+**Impact Assessment**
+↓
+**Road & Community Prioritisation**
+↓
+**Early Warning**
+↓
+**Citizen/Field Reports**
+↓
+**Emergency Response**
+
+This complete decision-support workflow is the key SIH innovation.
+
+---
+
+# 27. DEMO MODE
+
+Add a clearly visible button:
+
+**🎮 Demo Mode**
+
+When activated, preload all simulated data and enable the Risk Simulator.
+
+Include a small badge:
+
+**SIH 2026 Prototype**
+
+---
+
+# 28. FINAL REQUIREMENT
+
+Make the prototype feel like a **working product**, not a static UI mockup.
+
+All major interactions must work:
+
+* navigation
+* map markers
+* filters
+* charts
+* sliders
+* AI simulation
+* risk calculation
+* alert generation
+* field report submission
+* notification updates
+* role switching
+* language switching
+* low-network simulation
+
+If real backend/database/API integration is unavailable, implement the functionality using local mock data/state so the entire demo works smoothly.
+
+Prioritize **excellent UI/UX + convincing interactions + clear SIH problem-solution storytelling** over unnecessary complexity.
